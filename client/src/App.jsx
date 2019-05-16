@@ -2,6 +2,9 @@ import React, { PureComponent } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+// Import Components
+import PublicContainer from '../src/components/publicContainer'
+
 const styles = {
     body: {
         backgroundColor: '#FBFAF8',
@@ -15,7 +18,7 @@ class App extends PureComponent {
         return (
             <Router>
                 <div className={classes.body}>
-                  Hello
+                    <PublicContainer />
                 </div>
             </Router>
         );
