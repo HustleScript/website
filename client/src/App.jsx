@@ -17,9 +17,7 @@ class App extends PureComponent {
         const { classes } = this.props;
         return (
             <Router>
-                <div className={classes.body}>
-                    <PublicContainer />
-                </div>
+                <PublicContainer />
             </Router>
         );
     }
