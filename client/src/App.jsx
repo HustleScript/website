@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 // Import Components
-import PublicContainer from '../src/components/publicContainer'
+import PublicContainer from './components/publicContainer';
 
 const styles = {
     body: {
@@ -14,7 +14,7 @@ const styles = {
 
 class App extends PureComponent {
     render() {
-        const { classes } = this.props;
+        // const { classes } = this.props;
         return (
             <Router>
                 <PublicContainer />
