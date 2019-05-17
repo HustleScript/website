@@ -24,10 +24,10 @@ class Logo extends Component {
 
     // TODO: Add onClick functionality
     render() {
-        const { classes } = this.props;
+        const { classes, src } = this.props;
         return (
             <div className={classes.logoContainer}>
-                <img className={classes.logo} src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="Logo" />
+                <img className={classes.logo} src={src} alt="Logo" />
             </div>
         );
     }

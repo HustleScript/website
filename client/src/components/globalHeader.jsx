@@ -11,6 +11,13 @@ const styles = {
         width: '100%',
         height: '48px',
     },
+    headerLeft: {
+
+    },
+    headerRight: {
+        display: 'flex',
+        justifyContent: 'space-between',
+    },
     headerLinks: {
         display: 'flex',
         flexDirection: 'row',
@@ -27,11 +34,11 @@ class GlobalHeader extends Component {
         super(props);
         this.state = {
             headerList: [{
-                name: 'Header 1',
-                path: '/header1',
+                name: 'Events',
+                path: '/events',
             }, {
-                name: 'Header 2',
-                path: '/header2',
+                name: 'Blog',
+                path: '/blog',
             }],
         };
 
@@ -57,8 +64,13 @@ class GlobalHeader extends Component {
 
         return (
             <div className={classes.headerBar}>
-                <Logo />
-                {this.generateMenu(headerList)}
+                <div className={classes.headerLeft}>
+                    <Logo src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" />
+                </div>
+                <div className={classes.headerRight}>
+                    {this.generateMenu(headerList)}
+                    <Logo src="https://cdn2.iconfinder.com/data/icons/budicon-user/16/32-user_-_single-512.png" />
+                </div>
             </div>
         );
     }
