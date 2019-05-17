@@ -6,7 +6,6 @@ Fixes [ISS-001](https://google.com/issueLink)
 (If it's a complex change, explain it)
 
 ## Proof
-(Screenshot if applicable)
 ![proof](https://i.gyazo.com/GIF_ID.gif)
 
 ## Known issues
