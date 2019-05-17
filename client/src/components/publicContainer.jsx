@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
+import GlobalHeader from './globalHeader';
+
 const styles = {
 
 };
@@ -16,7 +18,7 @@ class PublicContainer extends Component {
     render() {
         return (
             <div>
-                Hello
+                <GlobalHeader />
             </div>
         );
     }
