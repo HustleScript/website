@@ -6,8 +6,6 @@ import { withStyles } from '@material-ui/core';
 
 const styles = {
     logoContainer: {
-        backgroundColor: 'red',
-        width: '100%',
         height: '48px',
     },
     logo: {
