@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 
 import GlobalHeader from './globalHeader';
+import Events from '../views/events';
 
 const styles = {
 
@@ -17,9 +19,14 @@ class PublicContainer extends Component {
 
     render() {
         return (
-            <div>
-                <GlobalHeader />
-            </div>
+            <Router>
+                <div>
+                    <GlobalHeader />
+                    {/* <Route exact path="/" component={Home} /> */}
+                    <Route path="/events" component={Events} />
+                    {/* <Route path="/topics" component={Topics} /> */}
+                </div>
+            </Router>
         );
     }
 }
