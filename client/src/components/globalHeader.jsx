@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { withStyles, Link } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import Logo from './logo';
 

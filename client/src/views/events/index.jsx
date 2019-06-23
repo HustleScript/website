@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core';
+import { withStyles, Paper } from '@material-ui/core';
 
 const styles = {
     body: {
@@ -20,7 +20,11 @@ class Events extends Component {
 
         return (
             <div className={classes.body}>
-                Hello
+                <Paper>
+                    <div>
+                        Hello
+                    </div>
+                </Paper>
             </div>
         );
     }
