@@ -13,11 +13,18 @@ class PublicContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            authenticated: false,
         };
     }
 
+    commponentWillReceiveProps(nextProps) {
+        const { auth } = nextProps;
+        console.log('found auth: ', auth);
+        if (auth) this.setState({ authenticated: auth });
+    }
+
     render() {
+        // TODO: link back to login page
         return (
             <Router>
                 <div>
